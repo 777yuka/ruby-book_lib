@@ -1,33 +1,33 @@
-puts 1 + 2
+# puts 1 + 2
 
-a = "Hello, world!"
-puts a
+# a = "Hello, world!"
+# puts a
 
-b = "こんにちは"
-puts b
+# b = "こんにちは"
+# puts b
 
-string = "apple,banana,grape,orange,peach"
-array = string.split(",", 3)
-puts array #.inspect
+# string = "apple,banana,grape,orange,peach"
+# array = string.split(",", 3)
+# puts array #.inspect
 
-string = "apple,banana,grape"
-array = string.split(",")
-puts array #.inspect
+# string = "apple,banana,grape"
+# array = string.split(",")
+# puts array #.inspect
 
-array = ["apple", "banana", "grape"]
-p array.inspect
+# array = ["apple", "banana", "grape"]
+# p array.inspect
 
-def greet(country)
-  return "countryを入力してください" if country.nil?
-  if country == "japan"
-    "こんにちは"
-  else
-    "Hello"
-  end
-end
+# def greet(country)
+#   return "countryを入力してください" if country.nil?
+#   if country == "japan"
+#     "こんにちは"
+#   else
+#     "Hello"
+#   end
+# end
 
-puts greet("japan")
-puts greet(nil)
+# puts greet("japan")
+# puts greet(nil)
 
 #　表示させたい文字列 He said, "Don't speak."
 # puts %q!He said, "Don't speak."!　# エスケープなし
@@ -126,3 +126,13 @@ puts greet(nil)
 
 # 1 && nil && 3
 # 出力結果 => nil
+
+require "minitest/autorun"
+
+class SampleTest < Minitest::Test
+  def test_sample
+    assert_equal "RUBY" , "ruby".upcase
+  end
+end
+
+

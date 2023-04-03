@@ -127,12 +127,23 @@
 # 1 && nil && 3
 # 出力結果 => nil
 
-require "minitest/autorun"
+# require "minitest/autorun"
 
-class SampleTest < Minitest::Test
-  def test_sample
-    assert_equal "RUBY" , "ruby".upcase
-  end
-end
+# class SampleTest < Minitest::Test
+#   def test_sample
+#     assert_equal "RUBY" , "ruby".upcase
+#   end
+# end
+
+# numbers = [1, 2, 3, 4]
+# sum = 0
+# numbers.each do |n|
+#   sum_value = n.even? ? n * 10 : n
+#   sum += sum_value
+# end
+
+# puts sum
+
+puts (1..5).include?(1)
 
 

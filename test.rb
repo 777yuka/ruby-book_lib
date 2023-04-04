@@ -144,6 +144,24 @@
 
 # puts sum
 
-puts (1..5).include?(1)
+# puts (1..5).include?(1)
 
+numbers = [1, 2, 3, 4]
+
+# sum = 0
+# numbers.each do |n|
+#   sum_value  = n.even? ? n * 10 : n
+#   sum += sum_value
+# end
+# p n #eachはブロック内の変数は外で参照できない
+# p sum_value #eachはブロック内の変数は外で参照できない
+
+sum = 0
+for n in numbers
+  sum_value  = n.even? ? n * 10 : n
+  sum += sum_value
+end
+# p n
+# p sum_value
+p sum
 
